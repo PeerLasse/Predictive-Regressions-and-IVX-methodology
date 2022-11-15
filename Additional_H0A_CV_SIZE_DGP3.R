@@ -1,4 +1,4 @@
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Abgabe")
+setwd("")
 source("pv_sup.R")
 source("SupWald-Functions.R")
 #install.packages("future.apply")
@@ -63,7 +63,7 @@ rownames(quantiles)=c("2.5%","5%","10%","90%","95%","97,5%")
 quantiles_200=quantiles[,c(1,3,5,7)]
 quantiles_400=quantiles[,c(2,4,6,8)]
 quantiles=rbind(quantiles_200,quantiles_400)
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #PDF Output tab
 q_200<-kable(quantiles_200, format="latex",caption = "DGP3 T=200")
@@ -83,7 +83,7 @@ q_all<-kable(quantiles,format="latex",caption = "Table:1 Critical values of SupW
 cat(q_all, sep="\n", file="Crit_A_cov1.Rmd")
 render("Crit_A_cov1.Rmd",output_format = "pdf_document")
 #--------------------------------------------------------------------------------------------------------------------------------------------
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
 
 ###########################SIZE Properties for W_TA ##################################
 
@@ -96,7 +96,7 @@ size=cbind(`size 2.5`,`size 5`,`size 10`)
 size=cbind(size[,c(1,3,5)],size[,c(2,4,6)])
 
 colnames(size)=c("2.5%","5%","10%","2.5%","5%","10%")
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #PDF Output tab
 s_ges<-kable(size ,format="latex",caption = "Size properties SupWald A for DGP 3")%>%
@@ -104,4 +104,4 @@ s_ges<-kable(size ,format="latex",caption = "Size properties SupWald A for DGP 3
 cat(s_ges, sep="\n", file="Size_A_DGP3.Rmd")
 render("Size_A_DGP3.Rmd",output_format = "pdf_document")
 #--------------------------------------------------------------------------------------------------------------------------------------------
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
