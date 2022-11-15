@@ -1,4 +1,4 @@
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
 source("pv_sup.R")
 source("SupWald-Functions.R")
 #install.packages("future.apply")
@@ -68,7 +68,7 @@ colnames(`size_delta 2`)=coln
 
 table=rbind(`size_delta 1`,`size_delta 2`)
 
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #PDF Output tab
 s_d1<-kable(`size_delta 1` ,format="latex",caption = "delta = 0.66")%>%
@@ -90,4 +90,4 @@ cat(s_d, sep="\n", file="Size_B_delta.Rmd")
 render("Size_B_delta.Rmd",output_format = "pdf_document")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("C")
