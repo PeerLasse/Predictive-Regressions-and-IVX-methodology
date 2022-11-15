@@ -1,4 +1,4 @@
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
 source("pv_sup.R")
 source("SupWald-Functions.R")
 #install.packages("future.apply")
@@ -67,7 +67,7 @@ colnames(`size_rho 2`)=coln
 colnames(`size_rho 3`)=coln
 colnames(size_rho) =coln
 rownames(size_rho)=rep(c("c=5","c=10"),3)
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #PDF Output tab
 s_r1<-kable(`size_rho 1` ,format="latex",caption = "Rho = 0.7")%>%
@@ -109,4 +109,4 @@ s_r<-kable(size_rho ,format="latex",caption = " Table : 1 Size Estimates $W_0^A$
 cat(s_r, sep="\n", file="Size_A_rho.Rmd")
 render("Size_A_rho.Rmd",output_format = "pdf_document")
 
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
