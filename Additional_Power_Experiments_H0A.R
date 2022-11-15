@@ -1,4 +1,4 @@
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
 source("pv_sup.R")
 source("SupWald-Functions.R")
 #install.packages("future.apply")
@@ -101,7 +101,7 @@ complete_table3=cbind(power_DGP1_3[,1],power_DGP2_3[,1],power_DGP3_3[,1],power_D
 colnames(complete_table1)=c("DGP1","DGP2","DGP3","DGP1","DGP2","DGP3") 
 colnames(complete_table2)=c("DGP1","DGP2","DGP3","DGP1","DGP2","DGP3") 
 colnames(complete_table3)=c("DGP1","DGP2","DGP3","DGP1","DGP2","DGP3") 
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 p_comp1<-kable(complete_table1 ,format="latex",caption = "Power properties H0A Rho=0.7",digits=2)%>%
   kable_styling()%>%add_header_above(c(" "=1,"c=5" = 3, "c=10" = 3),line_sep = 3,line = FALSE)
@@ -133,4 +133,4 @@ output: pdf_document
 ",p_comp3, sep="\n", file="power_A_rho_0.9.Rmd")
 render("power_A_rho_0.9.Rmd",output_format = "pdf_document")
 #--------------------------------------------------------------------------------------------------------------------------------------------
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
