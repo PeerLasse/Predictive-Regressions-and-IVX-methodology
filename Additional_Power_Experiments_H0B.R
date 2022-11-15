@@ -1,4 +1,4 @@
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
 source("pv_sup.R")
 source("SupWald-Functions.R")
 #install.packages("future.apply")
@@ -102,7 +102,7 @@ complete_table2=cbind(power_DGP1_2[,1],power_DGP2_2[,1],power_DGP3_2[,1],power_D
 colnames(complete_table1)=c("DGP1","DGP2","DGP3","DGP1","DGP2","DGP3") 
 colnames(complete_table2)=c("DGP1","DGP2","DGP3","DGP1","DGP2","DGP3") 
 comp_ges=rbind(complete_table1,complete_table2)
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean/outputs/additional")
+setwd("")
 #--------------------------------------------------------------------------------------------------------------------------------------------
 p_comp1<-kable(complete_table1 ,format="latex",caption = "Power properties H0A delta=0.7",digits=2)%>%
   kable_styling()%>%add_header_above(c(" "=1,"c=5" = 3,"c=10" = 3),line_sep = 3,line = FALSE)
@@ -121,4 +121,4 @@ p_comp<-kable(comp_ges ,format="latex",caption = "Power properties SupWald Bivx"
 cat(p_comp, sep="\n", file="power_B_delta.Rmd")
 render("power_B_delta.Rmd",output_format = "pdf_document")
 #--------------------------------------------------------------------------------------------------------------------------------------------
-setwd("C:/Users/peerl/OneDrive/Desktop/Studium/Master 4/Seminar/Simulation/Clean")
+setwd("")
